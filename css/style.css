@@ -1,17 +1,10 @@
-#pic div , #drop-area div {
-  margin: 1%;
-  width: 30%;
-  height: 300px;
-  text-align: center;
-  padding: 1%; 
-  cursor: default !important
+nav.bg-light{
+	background-color:#2e8b57!important;
 }
-#drop-area div{
-border: 1px solid #ddd;
-cursor: default !important
+nav .nav-item{
+	text-transform:capitalize;
 }
-#pic div img , #drop-area div img{
-  width: 200px;
-  height: 200px;
-  cursor: default !important
+.nav-item .nav-link i{
+	display: block;
+	text-align: center;
 }
