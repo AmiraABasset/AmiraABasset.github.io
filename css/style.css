@@ -1,3 +1,6 @@
+body{
+	padding-top:7%; 
+}
 nav.bg-light{
 	background-color:#2e8b57!important;
 }
@@ -8,3 +11,35 @@ nav .nav-item{
 	display: block;
 	text-align: center;
 }
+ul li{
+	list-style:none;
+}
+#aboutme{
+	background-color: #e6f9e17a;
+	margin-right:4%;
+	border-radius:10px;
+	text-align:center;
+}
+#aboutme ul{
+	text-align:left;
+}
+#skills ul li .fa-star{
+	color:#f5bb19
+}
+#objective , #education ,#courses , #skills {
+	border-bottom:1px dashed #b6dcb4;
+	padding-bottom:20%;
+	padding-top:15%;
+}
+
+h3{
+	color:#2d8417;
+}
+#projects div div {
+	margin-top:4%;
+}
+#projects a{
+	font-size:26px;
+	text-decoration:none;
+}
+
