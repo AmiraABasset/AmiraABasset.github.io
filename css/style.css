@@ -1,53 +1,172 @@
 body{
-	padding-top:7%;
-	background-image: url('../bg.jpg'); 
+	font-family: Tahoma;
+	color: #fff;
+	background-image: url("../img/bg.jpg");
 }
-nav.bg-light{
-	background-color:#2e8b57!important;
+a{
+	color: #888;
 }
-nav .nav-item{
-	text-transform:capitalize;
+a:hover{
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
 }
-.nav-item .nav-link i{
-	display: block;
+button:enabled{
+	outline: none;
+}
+.background-color{
+	background-color: #3695ff ;
+}
+.main-color{
+	color: #3695ff;
+}
+.text-center{
 	text-align: center;
 }
-ul li{
-	list-style:none;
+.uppercase{
+	text-transform: uppercase;
+	font-weight: bold;
 }
-#aboutme{
-	background-color: #e6f9e17a;
-	margin-right:4%;
-	padding-top:22%;
-	border-radius:10px;
-	text-align:center;
+.social-media{
+	border-top: 1px solid #ddd;
+	margin-top: 20%;
 }
-#aboutme ul{
-	text-align:left;
+.social-media i{
+	background-color: #9da1a5;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	color:#fff;
+	text-align: center;
+	font-size: 16px;
 }
-#skills ul li .fa-star{
-	color:#f5bb19
+.social-media i.fa-linkedin:hover{
+	background-color: #007bb5
 }
-#objective , #education ,#courses , #skills {
-	border:1px dashed #b6dcb4;
+.social-media i.fa-github:hover{
+	background-color: #000
+}
+.social-media i.fa-envelope:hover{
+	background-color: #ea4335
+}
+.social-media i.fa-phone:hover{
+	background-color: #073282
+}
+/*welcome*/
+.welcome .col-md-12{
+	padding: 1% 20%;
+}
+.welcome .menu{
+	text-align: right;
+}
+.welcome .menu:hover{
+	cursor: pointer;
+}
+.welcome .menu-popup{
+	position: absolute;
+	background-color: rgba(255,255,255,1);
+	border-radius: 10px 0 10px 10px;
+	z-index: 90;
+	margin: 3% 20%;
+	width: 60%;
+	list-style: none;
+	display: none;
+}
+.welcome .menu-popup li{
+	padding-top: 5%;
+}
+.welcome .menu-popup li a{
+	color: #9da1a5;
+	font-size: 26px;
+	text-transform: capitalize;
+}
+.welcome .menu-popup li a:hover{
+	color: #3695ff
+}
+.welcome .menu-popup li .fa-close{
+	color: #000;
+	position: absolute;
+	right: 4%;
+	cursor: pointer;
+}
+.welcome .profile{
+	margin-top :5%;
+}
+.profile .profile_pic 
+,.profile h1 
+,.profile h3 
+,.profile button 
+,.profile i{
+	margin-bottom: 3%;
+}
+.profile .profile_pic{
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	box-shadow: 0 0 20px #3695ff;	
+}
+.profile button{
+	border-radius: 20px;
+	width: 20%;
+	transition: background-color 2s;
+}
+.profile button:hover{
+	background-color: #3695ff;
+	color:#fff;
+	border-color: #fff;
+}
+.profile i{
+	font-size: 40px;
+	padding-bottom: 2%;
+	animation-name: scroll;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: all;	
+}
+@keyframes scroll{
+	0%{
+		transform: translateY(0);
+		color: #3695ff;
+	}
+	50%{
+		transform: translateY(10px);
+		color: #ebf4fc;
+	}
+	100%{
+		transform: translateY(0px);
+		color: #3695ff;
+	}
+}
+/*about*/
+#about, #skills{
+	padding: 5% 20%;
+}
+#about p ,#projects{
+	color: #888;
+	font-size: 18px;
+}
+/*skills*/
+#skills , #courses{
+	background-color: #f1f8ff
+}
+#skills div{
+	color: #888;
+	width: 100%;
+	font-size: 75px;
+}
+/*projects*/
+#projects{
+	padding: 5% 0 0 15%;
+}
+#projects .col-md-3{
+	border: 1px solid #ddd;
 	border-radius: 10px;
-	padding:10%;
-	padding-bottom:20%;
-	background-color:rgba(255,255,255,0.5);
-	margin-bottom: 2%;
-	box-shadow: 0px 0px 10px #b6dcb4;
+	background-color: #f1f8ff;
+	margin: 0.5%
 }
-
-h3{
-	color:#2d8417;
+#projects img{
+	width: 90%;
 }
-#projects div{
-	margin:2%;
-	border: 1px solid #477d3d;
-	border-radius:10px;
-	padding:2%;
-}
-#projects a{
-	font-size:26px;
-	text-decoration:none;
+@media screen and (max-width: 575px){
 }
