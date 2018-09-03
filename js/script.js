@@ -1,52 +1,22 @@
 $(document).ready(function(){
 
-	$('#aboutme-nav').click(function(){
-		$('html, body').animate({
-	     		scrollTop: $("#aboutme").offset().top
-	    		}, 1000);
-		$('#aboutme-nav').addClass("active");
-		$('#objective-nav ,#education-nav , #courses-nav , #skills-nav , #projects-nav').removeClass("active");
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	    anchor.addEventListener('click', function (e) {
+	        e.preventDefault();
+
+			$('.menu-popup').fadeOut();
+			
+	        document.querySelector(this.getAttribute('href')).scrollIntoView({
+	            behavior: 'smooth'
+	        });
+	    });
 	});
 
-	$('#objective-nav').click(function(){
-		$('html, body').animate({
-	     		scrollTop: $("#objective").offset().top
-	    		}, 1000);
-		$('#objective-nav').addClass("active");
-		$('#aboutme-nav ,#education-nav , #courses-nav , #skills-nav , #projects-nav').removeClass("active");
+	$('.menu').click(function(){
+		$('.menu-popup').fadeIn();
 	});
 
-	$('#education-nav').click(function(){
-		$('html, body').animate({
-	     		scrollTop: $("#education").offset().top
-	    		}, 1000);
-		$('#education-nav').addClass("active");
-		$('#aboutme-nav , #objective-nav , #courses-nav , #skills-nav , #projects-nav').removeClass("active");
+	$('.menu-popup .fa-close').click(function(){
+		$('.menu-popup').fadeOut();
 	});
-
-	$('#courses-nav').click(function(){
-		$('html, body').animate({
-	     		scrollTop: $("#courses").offset().top
-	    		}, 1000);
-		$('#courses-nav ').addClass("active");
-		$('#aboutme-nav , #objective-nav ,#education-nav , #skills-nav , #projects-nav').removeClass("active");
-	});
-
-	$('#skills-nav').click(function(){
-		$('html, body').animate({
-	     		scrollTop: $("#skills").offset().top
-	    		}, 1000);
-		$('#skills-nav').addClass("active");
-		$('#aboutme-nav , #objective-nav ,#education-nav , #courses-nav , #projects-nav').removeClass("active");
-	});
-
-	$('#projects-nav').click(function(){
-		$('html, body').animate({
-	     		scrollTop: $("#projects").offset().top
-	    		}, 1000);
-		$('#projects-nav').addClass("active");
-		$('#aboutme-nav , #objective-nav ,#education-nav , #courses-nav , #skills-nav').removeClass("active");
-	});
-
-
 });
