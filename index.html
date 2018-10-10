@@ -14,52 +14,76 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<!-- welcome -->
-			<div class="row welcome background-color">
-				<div class="col-md-12 col-sm-12 menu">
-					under construction
-					<i class="fa fa-navicon"></i>		
+			<!-- welcome section  -->
+			<div class="row welcome">
+				<div class="col-md-12 text-right">
+					<i class="fa fa-navicon" data-toggle="modal" data-target="#menu"></i>
+					<!--Menu Modal -->
+					<div class="modal fade text-center" id="menu" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  	<div class="modal-dialog" role="document">
+					    	<div class="modal-content">
+						      	<div class="modal-body">
+					          		<span aria-hidden="true" class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+					        		<ul>
+										<li>
+											<a href="#about">
+												<i class="fa fa-info"></i> about me
+											</a>
+											<hr>
+										</li>		
+										<li>
+											<a href="#skills">
+												<i class="fa fa-bar-chart"></i> skills
+											</a>
+											<hr>
+										</li>		
+										<li>
+											<a href="#projects">
+												<i class="fa fa-code"></i> projects
+											</a>
+											<hr>
+										</li>		
+										<li>
+											<a href="#courses">
+												<i class="fa fa-tv"></i> courses
+											</a>
+											<hr>
+										</li>
+										<li class="social-media"> 
+											<a href=""><i class="fa fa-linkedin"></i></a>
+											<a href=""><i class="fa fa-github"></i></a>
+										</li>		
+									</ul>
+						     	</div>
+					    	</div>
+					  	</div>
+					</div>
 				</div>
-				<ul class="col-md-12 col-sm-12 menu-popup">
-					<li><i class="fa fa-close"></i></li>		
-					<li>
-						<a href="#about">
-							<i class="fa fa-info"></i> about me
-						</a>
-					</li>		
-					<li>
-						<a href="#skills">
-							<i class="fa fa-bar-chart"></i> skills
-						</a>
-					</li>		
-					<li>
-						<a href="#projects">
-							<i class="fa fa-code"></i> projects
-						</a>
-					</li>		
-					<li>
-						<a href="#courses">
-							<i class="fa fa-tv"></i> courses
-						</a>
-					</li>
-					<li class="social-media"> 
-						<a href=""><i class="fa fa-linkedin"></i></a>
-						<a href=""><i class="fa fa-github"></i></a>
-					</li>		
-				</ul>
-				<div class="col-md-12 col-sm-12 text-center profile">
-					<img src="img/profile.png" alt="avatar" class="img img-responsive profile_pic">
-					<h1>Amira Abdulbasset</h1>
-					<h3>web developer</h3>
-					<button class="main-color uppercase btn">Hire Me</button>
-					<br>
-					<a href="#about"><i class="fa fa-angle-down"></i></a>		
+				<div class="col-md-12 col-sm-12 profile">
+					<img src="img/profile.png" alt="profile picture" class="col-md-12 col-sm-12 img img-responsive">
+					<h1 class="col-md-12 col-sm-12">Amira Abdulbasset</h1>
+					<h3>Web Developer</h3>
+					<button class="btn" data-toggle="modal" data-target="#hire_me">Hire Me</button>
+						<!--Hire me Modal -->
+						<div class="modal fade" id="hire_me" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  	<div class="modal-dialog" role="document">
+						    	<div class="modal-content">
+							      	<div class="modal-body">
+							        	<span aria-hidden="true" class="close" data-dismiss="modal" aria-label="Close">&times;</span>
+						        		<i class="fa fa-phone"> (+2)01097898457</i>
+						        		<i class="fa fa-envelope"> amira95basset@gmail.com</i>
+							     	</div>
+						    	</div>
+						  	</div>
+						</div>
+						<br>
+					<a href="#about"><i class="fa fa-angle-down"></i></a>
 				</div>
 			</div>
-			<!-- about me -->
-			<div class="row" id="about">
-				<div class="col-md-12 col-sm-12 text-center">
-					<h3 class="main-color">About me</h3>
+			<!-- about me section -->
+			<div id="about" class="row about">
+				<div class="col-md-12 col-sm-12">
+					<h1>About Me</h1>
 					<p>
 						Hi, my name is Amira, I am 23 years old,
 						I am from Egypt ,
@@ -67,103 +91,207 @@
 						my Objective is Building a successful career in Web development , get as large as making my own web development and designing team
 						<br>
 						<a href="https://www.visualcv.com/amira-abdulbasset">My CV</a>
-					</p>		
-				</div>
-			</div>1
-			<!-- skills -->
-			<div class="row" id="skills">
-				<div class="col-md-12 col-sm-12 text-center">
-					<h3 class="main-color">My Skills</h3>
-					<div class="row">
-						<div class="col-md-3 col-sm-4">
-							<i class="devicon-html5-plain-wordmark colored"></i>
-						</div>
-						<div class="col-md-3 col-sm-4">
-							 <i class="devicon-css3-plain-wordmark colored"></i>
-						</div>
-						<div class="col-md-3 col-sm-4">
-							  <i class="devicon-javascript-plain colored"></i> 
-						</div>
-						<div class="col-md-3 col-sm-4">
-							  <i class="devicon-jquery-plain-wordmark colored"></i>
-						</div>
-						<div class="col-md-3 col-sm-4">
-							<i class="devicon-bootstrap-plain-wordmark colored"></i> 
-							
-						</div>
-						<div class="col-md-3 col-sm-4">
-							  <i class="devicon-mysql-plain-wordmark colored"></i>
-						</div>
-						<div class="col-md-3 col-sm-4">
-							   <i class="devicon-php-plain colored"></i> 
-						</div>
-						<div class="col-md-3 col-sm-4">
-							   <i class="devicon-java-plain-wordmark colored"></i> 
-						</div>
-					</div>
+					</p>
 				</div>
 			</div>
-			<!-- projects -->
-			<div class="row" id="projects">
-				<div class="col-md-12 col-sm-12 text-center">
-					<h3 class="main-color">my Projects</h3>
-					<div class="row">
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="http://fitclothes600.byethost17.com/">Fit Clothes</a></h4>
-							<img src="img/fit.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="https://sellyourwriting12.000webhostapp.com/">sellyourwritings</a></h4>
-							<img src="img/sell.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="https://dollany.org/">Dollany</a></h4>
-							<img src="img/dollany.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>	
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="http://e3rfny.000webhostapp.com/">E3rfny</a></h4>
-							<img src="img/e3rfny.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="http://autismproject2018.eb2a.com/?i=1">Autism</a></h4>
-							<img src="img/autism.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="https://amiraabasset.github.io/forex_site/index.html">Forex</a></h4>
-							<img src="img/forex.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="https://amiraabasset.github.io/tanatos/index.html">Tanatos studio</a></h4>
-							<img src="img/tanatos.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-						<div class="col-md-3 col-sm-12">
-							<h4><a href="https://amiraabasset.github.io/luna/index.html">Luna</a></h4>
-							<img src="img/luna.png" class="img img-responsive" alt="">
-							<p></p>
-						</div>
-					</div>		
+			<!-- my skills section -->
+			<div id="skills" class="row skills">
+				<h1 class="col-md-12 col-sm-12">My Skills</h1>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-html5-plain-wordmark colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-css3-plain-wordmark colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-sass-plain colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-javascript-plain colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-jquery-plain-wordmark colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<p>AJAX</p>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-bootstrap-plain-wordmark colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-mysql-plain-wordmark colored"></i>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-php-plain colored"></i> 
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<i class="devicon-java-plain-wordmark colored"></i> 
 				</div>
 			</div>
-			<!-- courses -->
-			<div class="row" id="courses">
-				<div class="col-md-12 col-sm-12 text-center">
-					<h3 class="main-color">My Courses</h3>
-					<div class="row">
-						<div class="col-md-3 col-sm-4">
-							
-						</div>
+			<!-- my projects section -->
+			<div id="projects" class="row projects">
+				<h1 class="col-md-12 col-sm-12">My Projects</h1>
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="http://fitclothes600.byethost17.com/" style="color: #0da9ef"> Fit Clothes</a></h2>
+						<img src="img/fit.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						We interact with shoppers to further understand their body shape and how they like to wear their clothes.
+    					We use information such as: body shape to make mannequin fit for user measurements 
+						<br>skills i used:<br>
+						html, css, js, jquery, ajax, bootstrap, php, mysql
 					</div>
 				</div>
-			</div>				
-				
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="https://sellyourwriting12.000webhostapp.com/" style="color: #F9690E"> sell your writings</a></h2>
+						<img src="img/sell.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						is an online private company dealing with freelance writing jobs only.
+						<br>skills i used:<br>
+						html, css, js, jquery, ajax, bootstrap, php, mysql
+					</div>
+				</div>
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="https://dollany.org/" style="color: #6091BA"> Dollany</a></h2>
+						<img src="img/dollany.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						dollany Business Incubator is an economic and social entity specially established to provide advice For modern companies
+						<br>skills i used:<br>
+						html, css, js, jquery, ajax, bootstrap, php, mysql
+					</div>
+				</div>
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="http://e3rfny.000webhostapp.com/" style="color: #6091BA"> E3rfny</a></h2>
+						<img src="img/e3rfny.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						تأسس موقع إعرفني ضمن مشروع مجمع الإبداع وريادة الأعمال “حياة كريمة”
+						المنفذ من جمعية اتصال أسيوط لتكنولوجيا المعلومات بتمويل من هيئة كير الدولية والاتحاد الاوروبي
+						ونسعى لنكون شركة رائدة للبيع عبر الانترنت في مصر .
+						<br>skills i used:<br>
+						html, css, js, jquery, ajax, bootstrap, php, mysql
+					</div>
+				</div>
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="http://autismproject2018.eb2a.com/" style="color: cornflowerblue"> Autism</a></h2>
+						<img src="img/autism.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						Autism, refers to a range of conditions characterized by challenges with social skills, repetitive behaviors, speech and nonverbal communication, as well as by unique strengths and differences. 
+						<br>skills i used:<br>
+						html, css, js, jquery, ajax, bootstrap, php, mysql
+					</div>
+				</div>
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="https://amiraabasset.github.io/forex_site/index.html" style="color: #c0cf2e"> Forex</a></h2>
+						<img src="img/forex.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						PSD to HTML
+						<br>skills i used:<br>
+						html, css, js, jquery, ajax, bootstrap
+					</div>
+				</div>
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="https://amiraabasset.github.io/tanatos/index.html" style="color:#f7600e"> Tanatos studio</a></h2>
+						<img src="img/tanatos.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						PSD to HTML
+						<br>skills i used:<br>
+						html, css, sass, js, jquery, ajax, bootstrap
+					</div>
+				</div>
+				<!-- project end -->
+				<!-- project start -->
+				<div class="col-md-4 col-sm-6 project">
+					<h2><a href ="https://amiraabasset.github.io/luna/index.html" style="color:#4a24a8"> Luna</a></h2>
+						<img src="img/luna.png" alt="" class="front img img-responsive">
+					<div class="back">
+						about:<br>
+						PSD to HTML
+						<br>skills i used:<br>
+						html, css, sass, js, jquery, ajax, bootstrap
+					</div>
+				</div>
+				<!-- project end -->
+			</div>
+			<!-- courses section -->
+			<div id="courses" class="row courses">
+				<div class="col-md-12 col-sm-12">
+					<h1>Courses</h1>
+					<table class="table table-bordered">
+						<tr>
+							<td>HTML / CSS</td>
+							<td>2013-09</td>
+						</tr>
+						<tr>
+							<td>Javascript / Jquery</td>
+							<td>2014-01</td>
+						</tr>
+						<tr>
+							<td>SQL / mysql</td>
+							<td>2015-09</td>
+						</tr>
+						<tr>
+							<td>Responsive web design</td>
+							<td>2016-12</td>
+						</tr>
+						<tr>
+							<td>Bootstrap</td>
+							<td>2017-01</td>
+						</tr>
+						<tr>
+							<td>AJAX</td>
+							<td>2017-01</td>
+						</tr>
+						<tr>
+							<td>PHP</td>
+							<td>2017-01</td>
+						</tr>
+						<tr>
+							<td>Web design and development</td>
+							<td>2017-10</td>
+						</tr>
+						<tr>
+							<td>Mobile web develop 
+								<br>google - udacity</td>
+							<td>2017-11</td>
+						</tr>
+						<tr>
+							<td>Accelerator
+								<br>Technology Innovation and Entrepreneurship Center (TIEC)</td>
+							<td>2018-03</td>
+						</tr>
+						<tr>
+							<td>PHP OOP</td>
+							<td>2018-06</td>
+						</tr>
+						<tr>
+							<td>SASS</td>
+							<td>2018-09</td>
+						</tr>
+					</table>
+				</div>
+			</div>
 		</div>
+		
+
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/popper.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
