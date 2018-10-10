@@ -1,32 +1,181 @@
-body{
+* {
+  padding-bottom: 2.5%;
+}
+
+body {
+  text-align: center;
+}
+
+a {
+  color: #3695ff;
+}
+a:hover {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+hr {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  color: #3695ff;
+  -webkit-transition: border 2s;
+  transition: border 2s;
+}
+button:hover {
+  background-color: #3695ff;
+  border: 1px solid #f1f8ff;
+  color: #fff;
+}
+button:enabled {
+  outline: none;
+}
+
+/* welcome section */
+.welcome {
+  background-color: #3695ff;
+  color: #fff;
+}
+.welcome .fa-navicon:hover {
+  cursor: pointer;
+}
+.welcome #menu {
+  font-size: 20px;
+}
+.welcome #menu ul li a {
+  text-transform: capitalize;
+}
+.welcome .profile img {
+  background: #fff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #f1f8ff;
+  padding: 0;
+}
+.welcome .profile #hire_me i {
+  color: #3695ff;
+  display: block;
+  padding: 2%;
+}
+.welcome .profile .fa-angle-down {
+  font-size: 40px;
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: all;
+  padding-top: 5%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    color: #3695ff;
+  }
+  50% {
+    transform: translateY(10px);
+    color: #f1f8ff;
+  }
+  100% {
+    transform: translateY(0);
+    color: #3695ff;
+  }
+}
+/* about me section */
+.about h1 {
+  color: #3695ff;
+  font-weight: bold;
+}
+.about p {
+  color: #888;
+  font-size: 18px;
+  line-height: 2;
+}
+
+/* my skills section */
+.skills {
+  background-color: #f1f8ff;
+}
+.skills h1 {
+  color: #3695ff;
+  font-weight: bold;
+}
+.skills .col-md-3 {
+  font-size: 70px;
+}
+.skills .col-md-3:hover {
+  -ms-transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  transform: scale(1.5, 1.5);
+}
+.skills p {
+  font-size: 30px;
+}
+
+/* my projects section */
+.projects {
+  padding: 2%;
+}
+.projects h1 {
+  color: #3695ff;
+  font-weight: bold;
+}
+.projects .project {
+  margin-bottom: 4%;
+}
+.projects .project a {
+  color: #888;
+}
+.projects .project .front {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #f1f8ff;
+  overflow: hidden;
+  padding: 2%;
+}
+.projects .project .back {
+  background-color: #f1f8ff;
+  position: absolute;
+  top: 19%;
+  width: 93%;
+  height: 89%;
+  padding: 2%;
+  font-size: 18px;
+  color: #888;
+  display: none;
+}
+.projects .project:hover .back {
+  display: block;
+}
+
+/* my courses section */
+.courses {
+  background-color: #f1f8ff;
+}
+.courses h1 {
+  color: #3695ff;
+  font-weight: bold;
+}
+
+.welcome, .about, .skills, .courses {
+  /*padding-right: 20%;
+  padding-left: 20%;*/
+  padding: 2% 20%;
+}
+
+/*body{
 	font-family: Tahoma;
 	color: #fff;
 	background-image: url("../img/bg.jpg");
 }
-a{
-	color: #888;
-}
-a:hover{
-	cursor: pointer;
-	text-decoration: none;
-	color: #fff;
-}
-button:enabled{
-	outline: none;
-}
-.background-color{
-	background-color: #3695ff ;
-}
-.main-color{
-	color: #3695ff;
-}
-.text-center{
-	text-align: center;
-}
-.uppercase{
-	text-transform: uppercase;
-	font-weight: bold;
-}
+
+
 .social-media{
 	border-top: 1px solid #ddd;
 	margin-top: 20%;
@@ -53,120 +202,8 @@ button:enabled{
 .social-media i.fa-phone:hover{
 	background-color: #073282
 }
-/*welcome*/
-.welcome .col-md-12{
-	padding: 1% 20%;
-}
-.welcome .menu{
-	text-align: right;
-}
-.welcome .menu:hover{
-	cursor: pointer;
-}
-.welcome .menu-popup{
-	position: absolute;
-	background-color: rgba(255,255,255,1);
-	border-radius: 10px 0 10px 10px;
-	z-index: 90;
-	margin: 3% 20%;
-	width: 60%;
-	list-style: none;
-	display: none;
-}
-.welcome .menu-popup li{
-	padding-top: 5%;
-}
-.welcome .menu-popup li a{
-	color: #9da1a5;
-	font-size: 26px;
-	text-transform: capitalize;
-}
-.welcome .menu-popup li a:hover{
-	color: #3695ff
-}
-.welcome .menu-popup li .fa-close{
-	color: #000;
-	position: absolute;
-	right: 4%;
-	cursor: pointer;
-}
-.welcome .profile{
-	margin-top :5%;
-}
-.profile .profile_pic 
-,.profile h1 
-,.profile h3 
-,.profile button 
-,.profile i{
-	margin-bottom: 3%;
-}
-.profile .profile_pic{
-	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	box-shadow: 0 0 20px #3695ff;	
-}
-.profile button{
-	border-radius: 20px;
-	width: 20%;
-	transition: background-color 2s;
-}
-.profile button:hover{
-	background-color: #3695ff;
-	color:#fff;
-	border-color: #fff;
-}
-.profile i{
-	font-size: 40px;
-	padding-bottom: 2%;
-	animation-name: scroll;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-timing-function: all;	
-}
-@keyframes scroll{
-	0%{
-		transform: translateY(0);
-		color: #3695ff;
-	}
-	50%{
-		transform: translateY(10px);
-		color: #ebf4fc;
-	}
-	100%{
-		transform: translateY(0px);
-		color: #3695ff;
-	}
-}
-/*about*/
-#about, #skills{
-	padding: 5% 20%;
-}
-#about p ,#projects{
-	color: #888;
-	font-size: 18px;
-}
-/*skills*/
-#skills , #courses{
-	background-color: #f1f8ff
-}
-#skills div{
-	color: #888;
-	width: 100%;
-	font-size: 75px;
-}
-/*projects*/
-#projects{
-	padding: 5% 0 0 15%;
-}
-#projects .col-md-3{
-	border: 1px solid #ddd;
-	border-radius: 10px;
-	background-color: #f1f8ff;
-	margin: 0.5%
-}
-#projects img{
-	width: 90%;
-}
+
 @media screen and (max-width: 575px){
-}
+}*/
+
+/*# sourceMappingURL=style.css.map */
