@@ -3,8 +3,6 @@ $(document).ready(function(){
 	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	    anchor.addEventListener('click', function (e) {
 	        e.preventDefault();
-
-			$('.menu-popup').fadeOut();
 			
 	        document.querySelector(this.getAttribute('href')).scrollIntoView({
 	            behavior: 'smooth'
@@ -12,11 +10,9 @@ $(document).ready(function(){
 	    });
 	});
 
-	$('.menu').click(function(){
-		$('.menu-popup').fadeIn();
+	$('a').hover(function(){
+		$(this).attr('title','click to go !');
 	});
 
-	$('.menu-popup .fa-close').click(function(){
-		$('.menu-popup').fadeOut();
-	});
+
 });
