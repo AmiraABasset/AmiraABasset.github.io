@@ -13,6 +13,12 @@ $(document).ready(function(){
 	$('a').hover(function(){
 		$(this).attr('title','click to go !');
 	});
-
+	// Initialize AOS
+	AOS.init({
+		offset: 200,
+      	duration: 600,
+      	easing: 'ease-in-sine',
+      	delay: 100,
+	});
 
 });
