@@ -14,6 +14,6 @@ function select_city(){
        document.getElementById("area_list").innerHTML = this.responseText;
       }
     };
-    xhttp.open("get", url, true);
+    xhttp.open("GET", url, true);
     xhttp.send();
 }
