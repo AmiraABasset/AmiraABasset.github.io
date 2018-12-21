@@ -2,7 +2,7 @@ function select_city(){
     var city = document.getElementById("city_list").value;
     var url = "";
     if(city == 1){
-        url = "../mahula.txt";
+        url = "../mahula.html";
     }
     if(city == 2){
         url = "../assuit.html";
